@@ -1,22 +1,124 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Couleur principale  */
+  --primary: oklch(0.5644 0.245 264.82);
+  --primary-foreground: oklch(1 0 180); /* Blanc pour le texte sur primary */
+
+  /* Variantes de la couleur primaire */
+  --primary-normal: oklch(0.6507 0.2117 247.63);
+  --primary-hover: oklch(0.5182 0.13029 272.4028);
+
+  /* Couleur secondaire pour les accents */
+  --secondary: oklch(0.6533 0.2452 24.8);
+  --secondary-foreground: oklch(1 0 0); /* Blanc */
+
+  /* COULEURS DE FOND*/
+  /* Fond principal de l'application */
+  --background: oklch(0.9702 0 180); /*F5F5F5 */
+  --foreground: oklch(0.4495 0 180);
+
+  /* COULEURS NEUTRES */
+  --neutral-dark: oklch(0.235 0 180);
+  --pin: oklch(0.6941 0.220591 158.8643);
+
+  /* COMPOSANTS UI */
+  /* Cartes */
+  --card: oklch(1 0 180); /*  #F5F5F5 */
+  --secondary-card: oklch(0.9881 0 0);
+  --card-foreground: oklch(0.235 0 180); /* 1E1E1E */
+
+  /* Popovers et menus déroulants */
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2538 0.0446 248.86);
+
+  /* Éléments atténués (désactivés, secondaires) */
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.7757 0 89.88);
+
+  --accent: oklch(0.3505 0.0199 5.96); /* 423739 */
+
+  /*ÉTATS ET INTERACTIONS*/
+  /* Actions destructives (supprimer) */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+
+  /* Bordures */
+  --border: oklch(1 0 180);
+
+  /* Champs de saisie */
+  --input: oklch(0.922 0 0);
+
+  /* Focus ring (contour de focus) */
+  --ring: oklch(0.5644 0.245 264.82); /* couleur primary */
+
+  /* GRAPHIQUES ET VISUALISATIONS*/
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
 }
 
 @theme inline {
+  /*POLICES */
+  --font-inter: "var(--font-inter), system-ui, sans-serif ";
+  --font-sans: "Geist Mono", monospace;
+
+  /*COULEURS - MAPPING VERS LES VARIABLES CSS*/
+
+  /* Couleurs de base */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Couleurs primaires */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-normal: var(--primary-normal);
+
+  /* Couleurs secondaires */
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  /* Couleurs neutres */
+  --color-neutral-dark: var(--neutral-dark);
+
+  /* Composants UI */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-secondary-card: var(--color-secondary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+
+  /* États */
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  /* Formulaires */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Graphiques */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: oklch(0.9702 0 180); /* #0a0a0a */
+    --foreground: oklch(0.4495 0 180); /* #ededed */
   }
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {

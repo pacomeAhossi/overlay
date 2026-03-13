@@ -88,7 +88,7 @@ export function FloatingHeader() {
                   key={link.href}
                   href={link.href}
                   className="
-                    text-foreground text-md font-medium
+                    text-foreground text-lg font-medium
                     capitalize
                     hover:text-primary
                     transition-colors duration-200
@@ -101,7 +101,11 @@ export function FloatingHeader() {
 
             {/* CTA BUTTON - Desktop */}
             <div className="hidden md:block">
-              <Button variant="primary" href="#buy">
+              <Button
+                variant="primary"
+                href="#start"
+                className="bg-primary-normal"
+              >
                 Buy Now
               </Button>
             </div>
@@ -235,8 +239,8 @@ export function FloatingHeader() {
           <div className="mx-4 p-6 border-t border-background">
             <Button
               variant="primary"
-              href="#buy"
-              className="w-full"
+              href="#start"
+              className="w-full bg-primary-normal"
               onClick={handleLinkClick}
             >
               Buy Now

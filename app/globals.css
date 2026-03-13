@@ -20,6 +20,7 @@
 
   /* COULEURS NEUTRES */
   --neutral-dark: oklch(0.235 0 180);
+  --darker: oklch(0.2046 0 0);
   --pin: oklch(0.6941 0.220591 158.8643);
 
   /* COMPOSANTS UI */
@@ -82,11 +83,13 @@
 
   /* Couleurs neutres */
   --color-neutral-dark: var(--neutral-dark);
+  --color-pin: var(--pin);
+  --color-darker: var(--darker);
 
   /* Composants UI */
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-  --color-secondary-card: var(--color-secondary);
+  --color-secondary-card: var(--secondary-card);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
@@ -125,4 +128,47 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  /* Masquer la scrollbar tout en gardant le scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+  .delay-1000 {
+    animation-delay: 1000ms;
+  }
 }

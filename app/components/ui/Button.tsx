@@ -23,12 +23,13 @@ export function Button({
   // Classes de base communes à toutes les variantes
   const baseClasses = `
     inline-flex items-center justify-center
-    px-8 py-3
+    px-6 py-3
     rounded-xl
     whitespace-nowrap
     font-medium text-lg
     transition-all duration-200
     cursor-pointer
+    capitalize
     disabled:opacity-50 disabled:cursor-not-allowed
     focus:outline-none focus:ring-2 focus:ring-offset-2
   `;
@@ -36,7 +37,7 @@ export function Button({
   // Classes spécifiques par variante
   const variantClasses = {
     primary: `
-      bg-primary-normal text-primary-foreground
+       text-primary-foreground
       hover:bg-primary
       focus:ring-primary
     `,

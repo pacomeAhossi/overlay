@@ -66,7 +66,7 @@ export default function BlogSection() {
                   className="lg:max-w-md space-y-4 list-disc list-outside pl-5 px-2"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
+                  transition={{ duration: 0.3, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
                   <li className="text-sm sm:text-base md:text-lg text-foreground font-medium">

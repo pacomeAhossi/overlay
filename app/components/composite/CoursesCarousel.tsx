@@ -2,7 +2,6 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
-import LessonCard from "./LessonCard";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import CourseCard from "./CourseCard";
 

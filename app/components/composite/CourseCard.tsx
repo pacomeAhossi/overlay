@@ -17,7 +17,7 @@ interface CourseCardProps {
 
 export default function CourseCard({ course }: CourseCardProps) {
   return (
-    <div className="relative w-full  aspect-376/550 sm:h-[550px] p-4 rounded-3xl overflow-visible sm:overflow-hidden cursor-pointer bg-card border border-secondary-card ">
+    <div className="relative w-full  aspect-376/550 sm:h-[550px] p-4 rounded-3xl overflow-visible sm:overflow-hidden cursor-pointer bg-secondary-card border border-white shadow-sm ">
       <div className="relative h-[253px] w-full ">
         <Image
           src={course.image}

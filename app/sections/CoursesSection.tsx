@@ -23,7 +23,7 @@ const courses: Course[] = [
     image: "/assets/images/courses/mastering_course.png",
   },
   {
-    title: "Essentials to expertise",
+    title: "Essentials to Expertise",
     description:
       "Build confidently from core concepts to advanced mastery with a structured, hands-on approach ... ",
     price: 193,
@@ -32,10 +32,10 @@ const courses: Course[] = [
     image: "/assets/images/courses/essentials_course.png",
   },
   {
-    title: "Step-by-step",
+    title: "Step-by-Step",
     description:
       "Follow a clear, step-by-step path designed to build your skills gradually and confidently — from basics to mast... ",
-    price: 193,
+    price: 243,
     hours: 35,
     level: "Beginner Level",
     image: "/assets/images/courses/step_course.png",

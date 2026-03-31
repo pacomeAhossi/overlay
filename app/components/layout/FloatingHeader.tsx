@@ -21,7 +21,7 @@ export function FloatingHeader() {
     { href: "#about", label: "About Us" },
     { href: "#courses", label: "Our Courses" },
     { href: "#blog", label: "Blog" },
-    { href: "#contact", label: "Contact US" },
+    { href: "#faq", label: "Contact US" },
   ];
 
   // On détecte le scroll pour changer le style du navbar et le coller au top
@@ -103,7 +103,7 @@ export function FloatingHeader() {
             <div className="hidden md:block">
               <Button
                 variant="primary"
-                href="#start"
+                href="#courses"
                 className="bg-primary-normal"
               >
                 Buy Now
@@ -239,7 +239,7 @@ export function FloatingHeader() {
           <div className="mx-4 p-6 border-t border-background">
             <Button
               variant="primary"
-              href="#start"
+              href="#courses"
               className="w-full bg-primary-normal"
               onClick={handleLinkClick}
             >

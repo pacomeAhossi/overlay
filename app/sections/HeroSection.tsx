@@ -58,7 +58,7 @@ export default function HeroSection() {
             <div className="flex flex-col gap-4 items-center sm:flex-row sm:items-center">
               <Button
                 variant="primary"
-                href="#start"
+                href="#courses"
                 className="px-2 py-3 gap-2 bg-primary group"
               >
                 Start learning
@@ -74,7 +74,7 @@ export default function HeroSection() {
               </Button>
               <Button
                 variant="outline"
-                href="#courses"
+                href="#lessons"
                 className="p-2 shadow-xl"
               >
                 Explore courses

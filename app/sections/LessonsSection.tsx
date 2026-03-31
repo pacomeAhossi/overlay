@@ -49,7 +49,7 @@ const lessons: Lesson[] = [
 
 export default function LessonsSection() {
   return (
-    <section id="courses" className="pt-4 pb-10 md:pb-20 overflow-hidden">
+    <section id="lessons" className="pt-4 pb-10 md:pb-20 overflow-hidden">
       <div className="container m-auto px-6 sm:px-8">
         <div className="max-w-7xl m-auto">
           {/* title */}
